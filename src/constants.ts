@@ -17,25 +17,39 @@ Example:
   nodewriter my-specs/fff.json --service-name FridaysForFuture
 `;
 
+export const CLI_POST_COMMUNITY_REPO_GENERATION_MSG = `
+Successfully generated the community node repository.
+
+Please go to the repository and run:
+  pnpm install
+  pnpm run lint
+
+Update your package.json file:
+  Set the package description
+  Make sure the author’s name and email are correct
+  Set the repository URL
+  Set the homepage URL
+`;
+
 export const LAZY_PRINT_OPTIONS: recast.Options = {
-	reuseWhitespace: false,
-	objectCurlySpacing: false,
-	tokens: false,
+  reuseWhitespace: false,
+  objectCurlySpacing: false,
+  tokens: false,
 };
 
 export const FORMATTER_OPTIONS: BiomeConfiguration = {
-	files: {
-		maxSize: 5 * 1024 * 1024, // 5 MiB
-	},
-	javascript: {
-		formatter: {
-			quoteStyle: "single",
-			lineWidth: 100,
-		},
-	},
-	json: {
-		formatter: {
-			lineWidth: 100,
-		},
-	},
+  files: {
+    maxSize: 5 * 1024 * 1024, // 5 MiB
+  },
+  javascript: {
+    formatter: {
+      quoteStyle: "single",
+      lineWidth: 100,
+    },
+  },
+  json: {
+    formatter: {
+      lineWidth: 100,
+    },
+  },
 };
