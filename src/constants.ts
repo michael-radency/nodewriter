@@ -32,24 +32,24 @@ Update your package.json file:
 `;
 
 export const LAZY_PRINT_OPTIONS: recast.Options = {
-  reuseWhitespace: false,
-  objectCurlySpacing: false,
-  tokens: false,
+	reuseWhitespace: false,
+	objectCurlySpacing: false,
+	tokens: false,
 };
 
 export const FORMATTER_OPTIONS: BiomeConfiguration = {
-  files: {
-    maxSize: 5 * 1024 * 1024, // 5 MiB
-  },
-  javascript: {
-    formatter: {
-      quoteStyle: "single",
-      lineWidth: 100,
-    },
-  },
-  json: {
-    formatter: {
-      lineWidth: 100,
-    },
-  },
+	files: {
+		maxSize: 5 * 1024 * 1024, // 5 MiB
+	},
+	javascript: {
+		formatter: {
+			quoteStyle: "single",
+			lineWidth: 100,
+		},
+	},
+	json: {
+		formatter: {
+			lineWidth: 100,
+		},
+	},
 };
